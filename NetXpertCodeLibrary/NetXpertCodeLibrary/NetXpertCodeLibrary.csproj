@@ -1,0 +1,144 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ini_icon.ico</ApplicationIcon>
+    <SupportedOSPlatformVersion>7.0</SupportedOSPlatformVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NetExpertExtensions">
+      <HintPath>..\..\..\NetXpertExtensions\NetExpertExtensions\bin\Debug\net8.0-windows\NetExpertExtensions.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\ConfigManagement.cs">
+      <Link>ConfigManagement\ConfigManagement.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniBaseColorItem.cs">
+      <Link>ConfigManagement\IniBaseColorItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniBoolItem.cs">
+      <Link>ConfigManagement\IniBoolItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniFileBase.cs">
+      <Link>ConfigManagement\IniFileBase.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniFiles.cs">
+      <Link>ConfigManagement\IniFiles.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniFormItem.cs">
+      <Link>ConfigManagement\IniFormItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniGroups.cs">
+      <Link>ConfigManagement\IniGroups.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniItems.cs">
+      <Link>ConfigManagement\IniItems.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniPointItem.cs">
+      <Link>ConfigManagement\IniPointItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniRegistryFile.cs">
+      <Link>ConfigManagement\IniRegistryFile.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\IniRegistryItem.cs">
+      <Link>ConfigManagement\IniRegistryItem.cs</Link>
+    </Compile>
+    <Compile Include="..\..\..\ConfigManagement\ConfigManagement2\Classes\SimpleAES.cs">
+      <Link>ConfigManagement\SimpleAES.cs</Link>
+    </Compile>
+    <None Include="LanguageManager\LanguageManager.cs" />
+    <None Include="LanguageManager\PromptLibraryManager.cs" />
+    <None Include="PolyString.cs" />
+    <None Include="PolyVar.cs" />
+    <Compile Update="WinFormsControls\Controls\UpgradedBinaryViewer.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="WinFormsControls\Controls\BasicTransparentPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="WinFormsControls\Controls\TransparentRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Update="WinFormsControls\Controls\TransparentTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ExternalResources\NetXpertCodeLibrary.res.xml" />
+    <Content Include="ini_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0" />
+    <PackageReference Include="System.Drawing.Common" Version="8.0.0-preview.5.23280.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.42" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="CliColor.cs" />
+    <Compile Remove="ConsoleFunctions\Aliases.cs" />
+    <Compile Remove="ConsoleFunctions\AppletFoundation.cs" />
+    <Compile Remove="ConsoleFunctions\AuxConsole.cs" />
+    <Compile Remove="ConsoleFunctions\BackgroundForm.cs" />
+    <Compile Remove="ConsoleFunctions\BackgroundForm.Designer.cs" />
+    <Compile Remove="ConsoleFunctions\CliApplicationSettings.cs" />
+    <Compile Remove="ConsoleFunctions\CliColor.cs" />
+    <Compile Remove="ConsoleFunctions\CliHelp.cs" />
+    <Compile Remove="ConsoleFunctions\Cmdlets.cs" />
+    <Compile Remove="ConsoleFunctions\CmdLineClass-old.cs" />
+    <Compile Remove="ConsoleFunctions\CommandClass.cs" />
+    <Compile Remove="ConsoleFunctions\CommandLineInterface.cs" />
+    <Compile Remove="ConsoleFunctions\ConsoleCancelEvent.cs" />
+    <Compile Remove="ConsoleFunctions\ConsoleFunctions.cs" />
+    <Compile Remove="ConsoleFunctions\CustomFormat.cs" />
+    <Compile Remove="ConsoleFunctions\EnvironmentVars.cs" />
+    <Compile Remove="ConsoleFunctions\FileData.cs" />
+    <Compile Remove="ConsoleFunctions\PromptManagement.cs" />
+    <Compile Remove="ConsoleFunctions\RankManagement.cs" />
+    <Compile Remove="ConsoleFunctions\ScreenEdit.cs" />
+    <Compile Remove="ConsoleFunctions\ScreenEdit2.cs" />
+    <Compile Remove="ConsoleFunctions\SharedDataPool.cs" />
+    <Compile Remove="ConsoleFunctions\TextEdit.cs" />
+    <Compile Remove="ConsoleFunctions\TextFormatting.cs" />
+    <Compile Remove="ConsoleFunctions\UserInfo.cs" />
+    <Compile Remove="ConsoleFunctions\WindowInfo.cs" />
+    <Compile Remove="ConsoleFunctions\ZipFs.cs" />
+    <Compile Remove="ContactData\Addresses.cs" />
+    <Compile Remove="ContactData\BasicTypedData.cs" />
+    <Compile Remove="ContactData\ContactData.cs" />
+    <Compile Remove="ContactData\EmailAddresses.cs" />
+    <Compile Remove="ContactData\Password.cs" />
+    <Compile Remove="ContactData\PhoneNumbers.cs" />
+    <Compile Remove="ContactData\PostalCodes.cs" />
+    <Compile Remove="DeepValueCollection.cs" />
+    <Compile Remove="Extensions\ExceptionXtensions.cs" />
+    <Compile Remove="Extensions\FormExtensions.cs" />
+    <Compile Remove="Extensions\RichTextBoxXtensions.cs" />
+    <Compile Remove="LanguageManager\LanguageManager.cs" />
+    <Compile Remove="LanguageManager\PromptLibraryManager.cs" />
+    <Compile Remove="PolyString.cs" />
+    <Compile Remove="PolyVar.cs" />
+    <Compile Remove="WinFormsControls\AboutForm.cs" />
+    <Compile Remove="WinFormsControls\AboutForm.Designer.cs" />
+    <Compile Remove="WinFormsControls\CobblestoneBaseForm.cs" />
+    <Compile Remove="WinFormsControls\FormManagement.cs" />
+    <Compile Remove="WinFormsControls\FormSettingsManagement.cs" />
+    <EmbeddedResource Remove="ConsoleFunctions\BackgroundForm.resx" />
+    <EmbeddedResource Remove="NetXpertCodeLibrary.resx" />
+    <EmbeddedResource Remove="WinFormsControls\AboutForm.resx" />
+    <EmbeddedResource Remove="WinFormsControls\CobblestoneBaseForm.resx" />
+  </ItemGroup>
+</Project>

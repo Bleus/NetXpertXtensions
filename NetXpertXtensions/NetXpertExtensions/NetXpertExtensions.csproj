@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CmdLineDataProcessor.cs" />
+    <Compile Remove="Controls\XmlHelpParser.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="NetX-LMP">
+      <HintPath>..\..\..\Languages\NetX-LMP\bin\Debug\NetX-LMP.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleContactLibrary">
+      <HintPath>..\..\..\SimpleContactLibrary\bin\Debug\net5.0\SimpleContactLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

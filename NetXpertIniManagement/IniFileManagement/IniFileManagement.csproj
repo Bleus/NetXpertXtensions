@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows10.0.17763.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Leftovers\**" />
+    <EmbeddedResource Remove="Leftovers\**" />
+    <None Remove="Leftovers\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="IniLineStringValue.cs" />
+    <Compile Remove="IniValue-1.cs" />
+    <Compile Remove="IniValue-2.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="DefaultFileTemplate.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DefaultFileTemplate.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Projects\NetXpertExtensions\NetExpertExtensions\NetExpertExtensions.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,96 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CliColor.cs" />
+    <Compile Remove="ConsoleFunctions\Aliases.cs" />
+    <Compile Remove="ConsoleFunctions\AppletFoundation.cs" />
+    <Compile Remove="ConsoleFunctions\AuxConsole.cs" />
+    <Compile Remove="ConsoleFunctions\BackgroundForm.cs" />
+    <Compile Remove="ConsoleFunctions\CliApplicationSettings.cs" />
+    <Compile Remove="ConsoleFunctions\CliColor.cs" />
+    <Compile Remove="ConsoleFunctions\CliHelp.cs" />
+    <Compile Remove="ConsoleFunctions\Cmdlets.cs" />
+    <Compile Remove="ConsoleFunctions\CmdLineClass-old.cs" />
+    <Compile Remove="ConsoleFunctions\CommandClass.cs" />
+    <Compile Remove="ConsoleFunctions\CommandLineInterface.cs" />
+    <Compile Remove="ConsoleFunctions\ConsoleCancelEvent.cs" />
+    <Compile Remove="ConsoleFunctions\ConsoleFunctions.cs" />
+    <Compile Remove="ConsoleFunctions\CustomFormat.cs" />
+    <Compile Remove="ConsoleFunctions\EnvironmentVars.cs" />
+    <Compile Remove="ConsoleFunctions\FileData.cs" />
+    <Compile Remove="ConsoleFunctions\PromptManagement.cs" />
+    <Compile Remove="ConsoleFunctions\RankManagement.cs" />
+    <Compile Remove="ConsoleFunctions\ScreenEdit.cs" />
+    <Compile Remove="ConsoleFunctions\ScreenEdit2.cs" />
+    <Compile Remove="ConsoleFunctions\SharedDataPool.cs" />
+    <Compile Remove="ConsoleFunctions\TextEdit.cs" />
+    <Compile Remove="ConsoleFunctions\TextFormatting.cs" />
+    <Compile Remove="ConsoleFunctions\UserInfo.cs" />
+    <Compile Remove="ConsoleFunctions\WindowInfo.cs" />
+    <Compile Remove="ConsoleFunctions\ZipFs.cs" />
+    <Compile Remove="ContactData\Addresses.cs" />
+    <Compile Remove="ContactData\BasicTypedData.cs" />
+    <Compile Remove="ContactData\ContactData.cs" />
+    <Compile Remove="ContactData\EmailAddresses.cs" />
+    <Compile Remove="ContactData\Password.cs" />
+    <Compile Remove="ContactData\PhoneNumbers.cs" />
+    <Compile Remove="ContactData\PostalCodes.cs" />
+    <Compile Remove="WinFormsControls\AboutForm.cs" />
+    <Compile Remove="WinFormsControls\AboutForm.Designer.cs" />
+    <Compile Remove="WinFormsControls\CobblestoneBaseForm.cs" />
+    <Compile Remove="WinFormsControls\FormManagement.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="CliColor.cs" />
+    <None Include="ConsoleFunctions\Aliases.cs" />
+    <None Include="ConsoleFunctions\AppletFoundation.cs" />
+    <None Include="ConsoleFunctions\AuxConsole.cs" />
+    <None Include="ConsoleFunctions\BackgroundForm.cs" />
+    <None Include="ConsoleFunctions\CliApplicationSettings.cs" />
+    <None Include="ConsoleFunctions\CliColor.cs" />
+    <None Include="ConsoleFunctions\CliHelp.cs" />
+    <None Include="ConsoleFunctions\Cmdlets.cs" />
+    <None Include="ConsoleFunctions\CmdLineClass-old.cs" />
+    <None Include="ConsoleFunctions\CommandClass.cs" />
+    <None Include="ConsoleFunctions\CommandLineInterface.cs" />
+    <None Include="ConsoleFunctions\ConsoleCancelEvent.cs" />
+    <None Include="ConsoleFunctions\ConsoleFunctions.cs" />
+    <None Include="ConsoleFunctions\CustomFormat.cs" />
+    <None Include="ConsoleFunctions\EnvironmentVars.cs" />
+    <None Include="ConsoleFunctions\FileData.cs" />
+    <None Include="ConsoleFunctions\PromptManagement.cs" />
+    <None Include="ConsoleFunctions\RankManagement.cs" />
+    <None Include="ConsoleFunctions\ScreenEdit.cs" />
+    <None Include="ConsoleFunctions\ScreenEdit2.cs" />
+    <None Include="ConsoleFunctions\SharedDataPool.cs" />
+    <None Include="ConsoleFunctions\TextEdit.cs" />
+    <None Include="ConsoleFunctions\TextFormatting.cs" />
+    <None Include="ConsoleFunctions\UserInfo.cs" />
+    <None Include="ConsoleFunctions\WindowInfo.cs" />
+    <None Include="ConsoleFunctions\ZipFs.cs" />
+    <None Include="ContactData\Addresses.cs" />
+    <None Include="ContactData\BasicTypedData.cs" />
+    <None Include="ContactData\ContactData.cs" />
+    <None Include="ContactData\EmailAddresses.cs" />
+    <None Include="ContactData\Password.cs" />
+    <None Include="ContactData\PhoneNumbers.cs" />
+    <None Include="ContactData\PostalCodes.cs" />
+    <None Include="WinFormsControls\AboutForm.cs" />
+    <None Include="WinFormsControls\AboutForm.Designer.cs" />
+    <None Include="WinFormsControls\CobblestoneBaseForm.cs" />
+    <None Include="WinFormsControls\FormManagement.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\NetXpertXtensions\NetXpertExtensions\NetXpertExtensions.csproj" />
+  </ItemGroup>
+
+</Project>

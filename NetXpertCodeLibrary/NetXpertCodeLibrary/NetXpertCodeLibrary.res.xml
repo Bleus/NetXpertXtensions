@@ -1,0 +1,765 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="NetXpertCodeLibrary">
+  <resource name='NetXpertCodeLibrary'>
+    <settings>
+      <defaultCulture name='en-CA' />
+      <languages count='2'>
+        <language name='en-CA' alt='English'>Canadian English</language>
+        <language name='fr-CA' alt='French'>Canadian French</language>
+        <translation name='en-US' alias='en-CA' />
+        <translation name='en-UK' alias='en-CA' />
+        <translation name='fr-FR' alias='fr-CA' />
+      </languages>
+      <!--
+      <prompt id=''>
+        <data culture='en-CA'></data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      -->
+    </settings>
+    <method name='**Exceptions' default='en-CA'>
+      <prompt id='CmdletFoundation_Cmd' comment='InvalidOperationException - Cmdlets.cs'>
+        <data culture='en-CA'>"The specified CMD value is invalid. (&quot;$1&quot;)"</data>
+        <data culture='fr-CA'>La valeur CMD spécifiée n'est pas valide. (&quot;$1&quot;)</data>
+      </prompt>
+      <prompt id='Exception1'>
+        <data culture='en-CA'>The type &quot;$1&quot; is not a derivative of CommonDataFoundation!</data>
+        <data culture='fr-CA'>Le type &quot;$1&quot; n&apos;est pas un dérivé de CommonDataFoundation!</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletFoundation' default='en-CA'>
+      <prompt id='About'>
+        <data culture='en-CA'>{}»{3,3}Cmdlet {7}[{B}$1{7}({E}$2{7})] version {A,rn}$3</data>
+        <data culture='fr-CA'>{}»{3,3}Cmdlet {7}[{B}$1{7}({E}$2{7})] la version {A,rn}$3</data>
+      </prompt>
+      <prompt id='Details'>
+        <data culture='en-CA'>$3{,3}» {F}Syntax{7,rn}:{,7}&gt; {F}$2$4{,rn}$5{,rn}</data>
+        <data culture='fr-CA'>$3{,3}» {F}Syntaxe{7,rn}:{,7}&gt; {F}$2$4{,rn}$5{,rn}</data>
+      </prompt>
+      <prompt id='Purpose'>
+        <data culture='en-CA'>{,3}» {F}Purpose{7}: {9}</data>
+        <data culture='fr-CA'>{,3}» {F}Objectif{7}: {9}</data>
+      </prompt>
+      <prompt id='Help'>
+        <data culture='en-CA'>&#10;{,3}»{F,5}Notes{7,rn}: </data>
+        <data culture='fr-CA'>&#10;{,3}»{F,5}Remarques{7,rn}: </data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletHelp' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Lists commands and applets that are available and recognized by the shell.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{,3}»{F,5rn}Internal System Commands:</data>
+        <data culture='fr-CA'>{,3}»{F,5rn}Commandes Système Internes:</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>Description</data>
+        <data culture='fr-CA'>La Description</data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{1}«{8} No Description Available {1}»</data>
+        <data culture='fr-CA'>{1}«{8} Pas de description disponible {1}»</data>
+      </prompt>
+      <prompt id='Main3'>
+        <data culture='en-CA'>{6,5}For help specific to each command, type the command name and add the switch {9}&quot;{B}/?{9,rn}&quot;</data>
+        <data culture='fr-CA'>{6,5}Pour obtenir de l&apos;aide spécifique à chaque commande, tapez le nom de la commande et ajoutez le commutateur {9}&quot;{B}/?{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main4'>
+        <data culture='en-CA'>{,3}»{F,5rn}Applets that are currently installed and available to you:{,,&gt;4} </data>
+        <data culture='fr-CA'>{,3}»{F,5rn}Applets actuellement installés et disponibles pour vous:{,,&gt;4} </data>
+      </prompt>
+      <prompt id='Main5'>
+        <data culture='en-CA'>{E,5}Command{E,20}Rank Required{E,40rn}Description{,5rn,&gt;*&apos;─&apos;}─</data>
+        <data culture='fr-CA'>{E,5}Commande{E,20}Rang Requis{E,40rn}La Description{,5rn,&gt;*&apos;─&apos;}─</data>
+      </prompt>
+      <prompt id='Main6'>
+        <data culture='en-CA'>{6,5}For help specific to each applet, type the applet name and add the switch {9}&quot;{B}/?{9,rn}&quot;</data>
+        <data culture='fr-CA'>{6,5}Pour obtenir de l'aide spécifique à chaque applet, saisissez le nom de l'applet et ajoutez le commutateur: {9}&quot;{B}/?{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main7'>
+        <data culture='en-CA'>{,rn}{,3}»{F,5}Your Defined Aliases ({9}$1 {7}of {9}$2{F,rn}):{E,5,>15}Alias{E,rn}Translation</data>
+        <data culture='fr-CA'>{,rn}{,3}»{F,5}Vos Alias Définis ({9}$1 {7}sur {9}$2{F,rn}):{E,5,>15}Alias{E,rn}Traduction</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletAttach' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Dynamically incorporates an external library (DLL) into the application.</data>
+        <data culture='fr-CA'>Incorpore dynamiquement une bibliothèque externe (DLL) dans l&apos;application.</data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{,3}»{7,5}Attempting to attach {7}&quot;{E}$2{7}&quot;{$1}...</data>
+        <data culture='fr-CA'>{,3}»{7,5}Tenter de joindre {7}&quot;{E}$2{7}&quot;{$1}...</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>Done</data>
+        <data culture='fr-CA'>Fini</data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{}$1{,rn}The requested DLL file was not found!{,3}» {7}[{E}$2{7,rn}]</data>
+        <data culture='fr-CA'>{}$1{,rn}Le fichier DLL demandé est introuvable!{,3}» {7}[{E}$2{7,rn}]</data>
+      </prompt>
+      <prompt id='Main3'>
+        <data culture='en-CA'>{}You need to specify the name of the DLL file ({B}without extension!{,rn}) that you&apos;d like to add.</data>
+        <data culture='fr-CA'>{}Vous devez spécifier le nom du fichier DLL que vous souhaitez ajouter. ({B}Sans l&apos;extension!{,rn})</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletCommand' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Manages CLI command functions, and scripts.</data>
+        <data culture='fr-CA'>Gère les fonctions de commande CLI et les scripts.</data>
+      </prompt>
+      <prompt id='MySyntax'>
+        <data culture='en-CA'>[/INSTALL] [/UNINSTALL] [/RUN:scriptName] [/LIST:script|cmd|buffer]</data>
+        <data culture='fr-CA'>[/INSTALL] [/UNINSTALL] [/RUN:nom du script] [/LIST:script|cmd|buffer]</data>
+      </prompt>
+      <prompt id='ListScripts0'>
+        <data culture='en-CA'>{,rn,>*&apos;═&apos;}═{7,5}Name{7,32rn}Location{,0rn,>*&apos;─&apos;}─</data>
+        <data culture='fr-CA'>{,rn,>*&apos;═&apos;}═{7,5}Nom{7,32rn}Emplacement{,0rn,>*&apos;─&apos;}─</data>
+      </prompt>
+      <prompt id='ListScripts1'>
+        <data culture='en-CA'>{,rn}No scripts were found.</data>
+        <data culture='fr-CA'>{,rn}Aucun script n&apos;a été trouvé.</data>
+      </prompt>
+      <prompt id='ListScripts2'>
+        <data culture='en-CA'>script was found</data>
+        <data culture='fr-CA'>script a été trouvé</data>
+      </prompt>
+      <prompt id='ListScripts3'>
+        <data culture='en-CA'>scripts were found</data>
+        <data culture='fr-CA'>scripts trouvés</data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{}»{A,3}Clearing the existing applet library{7}: [{A}√{7}] {9,rn}Done.</data>
+        <data culture='fr-CA'>{}»{A,3}Effacement de la bibliothèque d&apos;applets existante{7}: [{A}√{7}] {9,rn}Fini.</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>{}»{A,3}Searching all loaded modules for viable applets{7,rn}...</data>
+        <data culture='fr-CA'>{}»{A,3}Recherche d&apos;applets viables dans tous les modules chargés{7,rn}...</data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{z,3}»{C,5}Skipped  {9}&quot;{B}$1{9}&quot;{7}: {E,rn}Not a valid Applet assembly.</data>
+        <data culture='fr-CA'>{z,3}»{9,5}&quot;{B}$1{9}&quot;{C}ignoré {7}: {E,rn}Ce n&apos;est pas un assemblage d&apos;applet valide..</data>
+      </prompt>
+      <prompt id='Main3'>
+        <data culture='en-CA'>{z,3}»{7,5}Looking for applets in assembly {9}&quot;{B}$1{9}&quot;{7,rn}... </data>
+        <data culture='fr-CA'>{z,3}»{7,5}Recherche d&apos;applets dans l&apos;assembly {9}&quot;{B}$1{9}&quot;{7,rn}... </data>
+      </prompt>
+      <prompt id='Main4'>
+        <data culture='en-CA'>{z,5}»{7,7}Checking type {}[{B}$1{}]{7}</data>
+        <data culture='fr-CA'>{z,5}»{7,7}Vérification du type {}[{B}$1{}]{7}</data>
+      </prompt>
+      <prompt id='Main5'>
+        <data culture='en-CA'>{z,5}»{F,7}Found! {6}[{B}$1{6}]{D,54}-► {F}Loading...</data>
+        <data culture='fr-CA'>{z,5}»{F,7}A Trouvé!{6}[{B}$1{6}]{D,54}-► {F}Chargement...</data>
+      </prompt>
+      <prompt id='Main6'>
+        <data culture='en-CA'>Installed</data>
+        <data culture='fr-CA'>Installé</data>
+      </prompt>
+      <prompt id='Main7'>
+        <!-- "Espace de noms" recherché: aucune applet trouvée. -->
+        <data culture='en-CA'>{z,3}»{4,5}Searched {9}&quot;{B}$1{9}&quot;{7}: {A,rn}No Applets Found.{z,r} </data>
+        <data culture='fr-CA'>{z,3}»{9,5}&quot;{B}$1{9}&quot;{7} {4}recherché{7}: {A,rn}Aucune Applet trouvée.</data>
+      </prompt>
+      <prompt id='Main8'>
+        <data culture='en-CA'>{7}[{C}X{7}] {9,rn}Done.{,3}»{F4,5}Error:{7,rn} No applets were discovered.{,5}Try {F}ATT{,rn}aching an Applet Resource file (DLL).</data>
+        <data culture='fr-CA'>{7}[{C}X{7}] {9,rn}Fini.{,3}»{F4,5}Erreur:{7,rn} Aucune applet n&apos;a été découverte.{,5,rn}Essayez d&apos;utiliser l&apos;applet de commande {F,13}ATT{,rn} pour attacher un fichier de ressources d&apos;applet (DLL).</data>
+      </prompt>
+      <prompt id='Main9'>
+        <data culture='en-CA'>{z,1}»{A,3rn}Module search has been completed.</data>
+        <data culture='fr-CA'>{z,1}»{A,3rn}La recherche du module est terminée.</data>
+      </prompt>
+      <prompt id='Main10'>
+        <data culture='en-CA'>{,3}»{7,5rn}All loaded applets have been uninstalled.</data>
+        <data culture='fr-CA'>{,3}»{7,5rn}Toutes les applets chargées ont été désinstallées.</data>
+      </prompt>
+      <prompt id='Main11'>
+        <data culture='en-CA'>{f,3}»{C,5rn}No script name was specified!{f,3}»{A,5}Listing known scripts{7,rn}:</data>
+        <data culture='fr-CA'>{f,3}»{C,5rn}Aucun nom de script n&apos;a été spécifié!{f,3}»{A,5}Liste des scripts connus:</data>
+      </prompt>
+      <prompt id='Main12'>
+        <data culture='en-CA'>{B,32}» {e}Please enter the number of the Script that you&apos;d like to run {9}[{6}1{9}..{6}$1{9}]{7}: </data>
+        <data culture='fr-CA'>{B,32}» {e}Veuillez saisir le numéro du script que vous souhaitez exécuter {9}[{6}1{9}..{6}$1{9}]{7}: </data>
+      </prompt>
+      <prompt id='Main13'>
+        <data culture='en-CA'>{C,rn}Cancelled!{,rn} </data>
+        <data culture='fr-CA'>{C,rn}Annulé{,rn}</data>
+      </prompt>
+      <prompt id='Main14'>
+        <data culture='en-CA'>{}Running Script {7}[{B}$1{7}]:</data>
+        <data culture='fr-CA'>{}Exécution du Script {7}[{B}$1{7}]:</data>
+      </prompt>
+      <prompt id='Main15'>
+        <data culture='en-CA'>{f}»{} Running Internal Script {7}[{B}$1{7,rn}]:</data>
+        <data culture='fr-CA'>{f}»{} Exécution du Script Interne {7}[{B}$1{7,rn}]:</data>
+      </prompt>
+      <prompt id='Main16'>
+        <data culture='en-CA'>{f}»{} Running Script {7}[{B}$1{7}]:</data>
+        <data culture='fr-CA'>{f}»{} Exécution du Script {7}[{B}$1{7}]:</data>
+      </prompt>
+      <prompt id='Main17'>
+        <data culture='en-CA'>{,3}»{C,5}Error: {}The requested file ({7}&quot;$1.script{7}&quot;{,rn}) could not be found.{,5rn}Below is a list of scripts that can be executed with this command:</data>
+        <data culture='fr-CA'>{,3}»{C,5}Erreur: {}Le fichier demandé ({7}&quot;$1.script{7}&quot;{,rn}) est introuvable. {,5rn}Voici une liste de scripts qui peuvent être exécutés avec cette commande:</data>
+      </prompt>
+      <prompt id='Main18'>
+        <data culture='en-CA'>{,3}» The following {F}$1{} applets were found and have been installed{7,rn}:</data>
+        <data culture='fr-CA'>{,3}» Les {F}$1{} applets suivantes ont été trouvées et ont été installées{7,rn}:</data>
+      </prompt>
+      <prompt id='Main19'>
+        <data culture='en-CA'>{,5}» {7}Applet: {6}[{B}$1{6}] {F,27}&amp;lbrace;{E}Rank: {C,,&lt;3}$2{F}&amp;rbrace;{D,54}-► {A,rn}Installed! </data>
+        <data culture='fr-CA'>{,5}» {7}L&apos;Applet: {6}[{B}$1{6}] {F,27}&amp;lbrace;{E}Rang: {C,,&lt;3}$2{F}&amp;rbrace;{D,54}-► {A,rn}Installé! </data>
+      </prompt>
+      <prompt id='Main20'>
+        <data culture='en-CA'>
+          {Frn}  »{6,5}General information about these commands can be found by typing {9}&quot;{B}? {F}/
+          {E}details{9}&quot;{6,rn}.{6,5}More specific information is available by typing the name of the command
+          {7} ({6,rn}or{6,5}applet{7}){6} that you&apos;re interested in and adding the switch {9}&quot;{e}/?{9}&quot;{6,rn}.
+        </data>
+        <data culture='fr-CA'>
+          {Frn}  »{6,5}Des informations générales sur ces commandes peuvent être trouvées en tapant {9}&quot;{B}? {F}/
+          {E}details{9}&quot;{6,rn}.{6,5}Des informations plus spécifiques sont disponibles en tapant le nom de la commande
+          {7} ({6,rn}ou de {6,5}l&apos;applet{7}){6} qui vous intéresse et en ajoutant le commutateur {9}&quot;{e}/?{9}&quot;{6,rn}.
+        </data>
+      </prompt>
+      <prompt id='Main21'>
+        <data culture='en-CA'>{F,3}»{E,5rn}No applets are Loaded.</data>
+        <data culture='fr-CA'>{F,3}»{E,5rn}Aucune applet n&apos;est chargée.</data>
+      </prompt>
+      <prompt id='Main22'>
+        <data culture='en-CA'>{,rn,>*&apos;═&apos;}═{7}Idx{7,8}Age{7,27}Issued Command{7,80rn}Applied Rank{,rn,&gt;*&apos;─&apos;}─</data>
+        <data culture='fr-CA'>{,rn,>*&apos;═&apos;}═{7}Idc{7,8}Âge{7,27}Commande Émise{7,80rn}Rang Appliqué{,rn,&gt;*&apos;─&apos;}─0</data>
+      </prompt>
+      <prompt id='Main23'>
+        <data culture='en-CA'>CLI Command Buffer</data>
+        <data culture='fr-CA'>Tampon de commande CLI</data>
+      </prompt>
+      <prompt id='Main24'>
+        <data culture='en-CA'>{,3}» {F,rn}Nothing to do!</data>
+        <data culture='fr-CA'>{,3}» {F,rn}Rien à faire!</data>
+      </prompt>
+      <prompt id='Main25'>
+        <data culture='en-CA'>{C}Error: {,rn}No file specified to run!</data>
+        <data culture='fr-CA'>{C}Erreur: {,rn}Aucun fichier spécifié à exécuter!</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletPrompt' default='en-CA'>
+      <prompt id='MySyntax'>
+        <data culture='en-CA'>[prompt schema]</data>
+        <data culture='fr-CA'>[prompt schéma]</data>
+      </prompt>
+      <prompt id='MyHelp'>
+        <data culture='en-CA'>
+          {f,5}PMT {,rn}supports using several dynamic entities to customize it's output.
+          {,5rn}The Currently Recognized/Supported Entities are:$1&#10;{B,5}Be Aware: {}DECL patterning and HTML entities are {F}NOT{,rn}
+          supported!{,rn}{}The current Prompt is: {9}&quot;$2{9,rn}&quot;
+        </data>
+        <data culture='fr-CA'>
+          {f,5}PMT {,rn}prend en charge l'utilisation de plusieurs entités dynamiques pour personnaliser sa sortie.
+          {,5rn}Les entités actuellement reconnues / prises en charge sont:$1&#10;{b,5}Attention: {}Les modèles DECL et les entités HTML {f}ne sont PAS
+          {,rn}pris en charge!{}L&apos;invite actuelle est:: {9}&quot;$2{9,rn}&quot;
+        </data>
+      </prompt>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Manages the CLI prompt.</data>
+        <data culture='fr-CA'>Gère l&apos;invite de l&apos;interface de ligne de commande.</data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{,0}The Prompt has been changed to: {9}&quot;$1{9,rn}&quot;</data>
+        <data culture='fr-CA'>{,0}L&apos;invite a été modifiée en: {9}&quot;$1{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>{,0}The Current Prompt is: {9}&quot;$1{9,rn}&quot;</data>
+        <data culture='fr-CA'>{,0}L&apos;invite actuelle est: {9}&quot;$1{9,rn}&quot;</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.Cls' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Clears the screen and CLI scoll-back buffer.</data>
+        <data culture='fr-CA'>Efface le tampon de défilement de l&apos;écran et de l&apos;interface de ligne de commande.</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletDir' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Displays the contents of the current working directory.</data>
+        <data culture='fr-CA'>Affiche le contenu du répertoire de travail actuel.</data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{}Directory of {9}&quot;{6}$1{9}&quot;{7,rn}:{F,3}Name{F,62,|20}Size{F,80,|19}Last Accessed{F,104rn}Attr{,rn,>*'─'}─</data>
+        <data culture='fr-CA'>{}Répertoire de {9}&quot;{6}$1{9}&quot;{7,rn}:{F,3}Nom{F,62,|20}Taille{F,80,|19}Dernier accès{F,104rn}Attr{,rn,>*'─'}─</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>{6,3}$1{F,71}[{D}DIR{F}]{e1,80,|19}Directory{7,103}...{9}D{7,rn}...</data>
+        <data culture='fr-CA'>{6,3}$1{F,71}[{D}DIR{F}]{e1,80,|19}Annuaire{7,103}...{9}D{7,rn}...</data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{,rn,>*&apos;─&apos;}─{7,3}$1 {}file(s) {7,53,&lt;24}$2 {,rn}bytes.</data>
+        <data culture='fr-CA'>{,rn,>*&apos;─&apos;}─{7,3}$1 {}fichier(s) {7,53,&lt;24}$2 {,rn}octets.</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletEcho' default='en-CA'>
+      <prompt id='MySyntax'>
+        <data culture='en-CA'>[ON|OFF] [&quot;some text to output&quot;]</data>
+        <data culture='fr-CA'>[ON|OFF] [&quot;du texte à sortir&quot;]</data>
+      </prompt>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Echos information out to the console.</data>
+        <data culture='fr-CA'>Échos des informations sur la console.</data>
+      </prompt>
+      <prompt id='MyHelp'>
+        <data culture='en-CA'>
+          {,5}Environment variables can be dereferenced in the output by enclosing them in &apos;{7}%{,rn}&apos;
+          signs.{,5}For example: {}OUT {7}&quot;{}Echo is {E}%{3}ECHO{E}%{7}&quot;{,rn} would output:&#10;{3}&quot;{9}Echo is $1{3,rn}&quot;{,rn}
+        </data>
+        <data culture='fr-CA'>
+          {,5}Les variables d'environnement peuvent être déréférencées dans la sortie en les entourant de signes &apos;{7}%{,rn}&apos;.
+          {,5}Par exemple: {}OUT {7}&quot;{}L&apos;Echo est {E}%{3}ECHO{e}%{7}&quot; affichera {3}&quot;{9}:&apos;Echo est $1{3,rn}&quot;{,rn}
+        </data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>&quot;Echo is %ECHO%.&quot;</data>
+        <data culture='fr-CA'>&quot;L&apos;Echo est %ECHO%.&quot;</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>Echo is {7}&quot;{B}%ECHO%{7}&quot;</data>
+        <data culture='fr-CA'>L&apos;Echo est {7}&quot;{B}%ECHO%{7}&quot;</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletForms' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Facilitates oversight and management of dependent forms.</data>
+        <data culture='fr-CA'>Facilite la surveillance et la gestion des formulaires dépendants.</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletCwd' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Permits viewing, changing and resetting the current system working directory.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='MyHelp'>
+        <data culture='en-CA'>
+          {f,5}•{,7}The {9}&quot;{B}/show{9}&quot; {,rn}switch will display the current working directory. It will also be assumed if
+          {,7rn}this command is issued without any switches or other parameters.{,rn}
+          {F,5}•{,7}You can set a specific folder by specifying it, long-form, with the {B}/SET{7}:{E}folder {,rn}switch.
+          {F,5}NOTE: {}If the {9}&quot;{B}/SET{9}&quot; {,rn}switch is used with an invalid path, or an empty value, no changes will be applied.
+          {,rn} {,5}Additionally, {F}..{}, {F}~{}, and {F}\ {}can be used directly (without the switch) to navigate to{7,rn}:
+          {9,7}&quot;{F}..{9}&quot; {,rn}Up one folder.
+          {9,7}&quot;{F}\{9}&quot;  {}To the root of the current path. {9}({6}$1{9,rn})
+          {9,7}&quot;{F}~{9}&quot;  {}To the {B}$2 {,rn}home folder.{9,12}({6}$3{9,rn})
+          {,rn} {F,5}NOTE: {,rn}These symbols are individually iconic for their particular purpose!
+          {,11rn}They are not parsed and cannot be combined to aggregate effects.
+        </data>
+        <data culture='fr-CA'>
+          {f,5}•{,7}Le commutateur {9}&quot;{B}/show{9}&quot; {,rn} affichera le répertoire de travail actuel. Il sera
+          {,7rn}également supposé si cette commande est émise sans commutateurs ou autres paramètres.{,rn}
+          {F,5}•{,7rn}Vous pouvez définir un dossier spécifique en le spécifiant, sous forme longue, avec le{,7}commutateur {b}/SET{7}:{e}dossier{,rn}.
+          {F,5}REMARQUE: {}Si le commutateur {9}&quot;{B}/SET{9}&quot; {,rn}est utilisé avec un chemin non valide ou une valeur vide, aucune modification ne sera appliquée.
+          {,rn} {,5}Additionally, {F}..{}, {F}~{}, and {F}\ {}can be used directly (without the switch) to navigate to{7,rn}:
+          {,rn} {,5}De plus, {F}..{}, {F}~{} et {F}\{} peuvent être utilisés directement (sans le commutateur) pour accéder à(7,4n}:
+          {9,7}&quot;{F}..{9}&quot; {,rn}Jusqu'à un dossier.
+          {9,7}&quot;{F}\{9}&quot;  {}Vers le dossier racine du chemin actuel. {9}({6}$1{9,rn})
+          {9,7}&quot;{F}~{9}&quot;  {}Vers le dossier d'accueil {B}$2.{,rn}home folder. {9,12}({6}$3{9,rn})
+          {,rn} {F,5}REMARQUE: {,rn}Ces symboles sont individuellement emblématiques pour leur usage particulier!
+          {,11rn}Ils ne sont pas analysés et ne peuvent pas être combinés pour agréger les effets.
+        </data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{,3}»{A,5}The current working directory has been changed to{7,rn}:{9,5}&quot;{6}$1{9,rn}&quot;</data>
+        <data culture='fr-CA'>{,3}»{A,5}Le répertoire de travail actuel a été changé en{7,rn}:{9,5}&quot;{6}$1{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>{,3}»{7,5}The current working directory is{7,rn}:{9,5}&quot;{6}$1{9,rn}&quot;</data>
+        <data culture='fr-CA'>{,3}»{7,5}Le répertoire de travail actuel est{7,rn}:{9,5}&quot;{6}$1{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{,3}»{C,5rn}The supplied path doesn&apos;t seem to exist. {9,5}&quot;{e}$1{9,rn}&quot;</data>
+        <data culture='fr-CA'>{,3}»{C,5rn}Le chemin fourni ne semble pas exister. {9,5}&quot;{e}$1{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main3'>
+        <data culture='en-CA'>{,3}»{C,5}The supplied path isn&apos;t in a recognized form{7,rn}:{9,5}&quot;{e}$1{9,rn}&quot;</data>
+        <data culture='fr-CA'>{,3}»{C,5}Le chemin fourni n&apos;est pas sous une forme reconnue{7,rn}:{9,5}&quot;{e}$1{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main4'>
+        <data culture='en-CA'>{,3}»{E,5rn}Nothing to do!</data>
+        <data culture='fr-CA'>{,3}»{E,5rn}Rien à faire!</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletSet' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Manages viewing, setting and unsetting environment variables.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='MyHelp'>
+        <data culture='en-CA'>{7,5}•{,7}The {b}/IMPORT {}switch imports the {6}System {,rn}environment variable settings.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{7,3}»{,5}Attempting to import {F}$1 {6}System {,rn}environment variables.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>Importing</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{7,5}•{6,5}Skipping {9}&quot;{B}$1{9}&quot;{7}: {D,rn}Variable already exists!</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main3'>
+        <data culture='en-CA'>{,rn}Defined Environment Variables:</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main4'>
+        <data culture='en-CA'>{,rn}There are no defined environment variables.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main5'>
+        <data culture='en-CA'>Environment Variable Set</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main6'>
+        <data culture='en-CA'>{}The variable {7}&quot;{E}$1{7}&quot; {,rn}has been unset.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main7'>
+        <data culture='en-CA'>"{}The attempt to create the environment variable {7}&quot;{E}$1{7}&quot;{,rn} failed."</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+    </method>
+    <method name='NetXpertCodeLibrary.ConsoleFunctions.CmdletVer' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Displays details about all currently loaded modules.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{,3}»{E,5}$1 {7}- {D,rn}$2{7,5rn}Included Assemblies:</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdAlias' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Facilitates managing CLI aliases ({F}Macros{9}).</data>
+        <data culture='fr-CA'>Facilite la gestion des alias CLI ({F}Macros{9}).</data>
+      </prompt>
+      <prompt id='MyHelp'>
+        <data culture='en-CA'>
+          {7,5}•{,7}Aliases must be a minimum of {B}4 {,rn}characters in length.
+          {7,5}•{,7rn}The data portion of an alias cannot contain quotes. If you need quotes in the data,
+          {,7}use the hex char identifier {E}\x22 {,rn}instead.{7,5}•{,7rn}Multiple aliases can be defined
+          at the same time by separating them with spaces.{,7}For example{7,rn}:{,10}CS> {F}NAM {6}alias1{F}={B}
+          &quot;{E}a macro{B}&quot; {6}alias2{F}={B}&quot;{E}another macro{B}&quot; {6}alias3{F}={B}&quot;{E}more macros{B}&quot;{,rn}
+          {,rn}{7,5}• {,7}Aliases can be removed individually with the {9}[{B}/remove{7}:{e}alias{9}]{,rn}
+          switch,{,7rn}or in a group by setting them to an empty value.{,7}For example all of the following are
+          valid{7,rn}:{,10}CS> {F}NAM {B}/remove{7}:{6,rn}alias1{,10}CS> {F}NAM {6}alias2{F}={B}&quot;&quot; {6}alias3
+          {F}={,rn}{,rn}{7,5}• {,7}The {B}/clear{}, {B}/load{}, and {B}/save{,rn} switches will prompt for
+          confirmation if there is a{,7}potential for data loss. If you wish to override this inquiry, add
+          {e}silent {,rn}to the{,7}instruction like so{7,rn}:{,10}CS> {F}NAM {B}/clear{7}:{e,rn}silent{,10}CS>
+          {F}NAM {B}/save{7}:{6}reg{F}|{e,rn}silent{,rn}{7,5}•{,7}The {B}/limit {}switch is only available
+          to users with {3}System{7}.{e}Admin {,rn}or higher access and{,7}is range limited between {b}0 {}and
+          {b}255{,rn}.{,rn}{B,5}NOTE{F}: {}Currently the system only permits a maximum of {B}$1 {,rn}Aliases to
+          be defined per user.
+        </data>
+        <data culture='fr-CA'>
+          {7,5}•;{,7}Les alias doivent comporter au moins {B}4 {,rn}caractères.
+          {7,5}•;{,7rn}La partie données d'un alias ne peut pas contenir de guillemets. Si vous avez besoin de guillemets
+          {,7}dans les données, utilisez à la place l'identificateur de caractère hexadécimal {E}\x22{,rn}.
+          {7,5}•;{,7rn}Plusieurs alias peuvent être définis en même temps en les séparant par des espaces.
+          {,7}Par exemple{7,rn}:{,10}CS> {F}NAM {6}alias1{F}={B}&quot;{E}un macro{B}&quot; {6}alias2{F}={B}&quot;{E}une autre macro{B}&quot; {6}alias3{F}={B}&quot;{E}plus de macros!{B}&quot;{,rn}
+          {,rn}{7,5}•;{,7}Les alias peuvent être supprimés individuellement avec le commutateur {9}[{B}/remove{7}:{e}alias{9}]{,rn}
+          ,{,7rn}ou dans un groupe en leur attribuant une valeur vide.{,7}Par exemple, tous les éléments suivants sont valides{7,rn}:
+          {,10}CS> {F}NAM {B}/remove{7}:{6,rn}alias1{,10}CS> {F}NAM {6}alias2{F}={B}&quot;&quot; {6}alias3
+          {F}={,rn}{,rn}{7,5}•;{,7}The {B}/clear{}, {B}/load{}, and {B}/save{,rn} switches will prompt for
+          {F}={,rn}{,rn}{7,5}•;{,7}Les commutateurs {b}/clear{}, {b}/load{} et {b}/save{,rn} vous demanderont une confirmation
+          {,7}en cas de risque de perte de données. Si vous souhaitez ignorer cette requête, ajoutez {9}&quot;{e}silent{9}&quot;{} à l&quot;instruction comme ceci{7,rn}:
+          {,10}CS> {F}NAM {B}/clear{7}:{e,rn}silent{,10}CS>{F}NAM {B}/save{7}:{6}reg{F}|{e,rn}silent{,rn}
+          {,7}Le commutateur {B}/limit{} est uniquement disponible pour les utilisateurs disposant d'un accès {3}System{7}.{e,rn}Admin{,7} ou supérieur et sa plage est limitée entre {b}0 {}et {b}255{,rn}.{,rn}
+          {b,5}REMARQUE{F}: {}Actuellement, le système autorise uniquement la définition d&apos;un maximum d'alias de {b}$1 {,rn}par utilisateur.
+        </data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{,3}• {}Removed alias{7}: {9}&quot;{E}$1{9,rn}&quot;</data>
+        <data culture='fr-CA'>{,3}• {}Alias supprimé{7}: {9}&quot;{E}$1{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>{,3}» {}There is no alias called {9}&quot;{E}$1{9}&quot;{,rn} to remove.</data>
+        <data culture='fr-CA'>{,3}» {}Il n'y a pas d'alias du nom de {9}&quot;{E}$1{9}&quot;{,rn} à supprimer.</data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{,3}•{,5}Added alias{7}: {9}&quot;{E}$1{9}&quot; {7,32}-► {9,36}&quot;{6}$2{9,rn}&quot;</data>
+        <data culture='fr-CA'>{,3}•{,5}Alias ajouté{7}: {9}&quot;{E}$1{9}&quot; {7,32}-► {9,36}&quot;{6}$2{9,rn}&quot;</data>
+      </prompt>
+      <prompt id='Main3'>
+        <data culture='en-CA'>{,3}» {7,5}You cannot declare more than {9}$1 {7,rn}aliases.{7,5rn}You'll need to remove an existing alias to add another one.</data>
+        <data culture='fr-CA'>{,3}» {7,5}Vous ne pouvez pas déclarer plus d'alias {9}$1 {7,rn}. Vous devrez supprimer un alias existant pour en ajouter un autre.</data>
+      </prompt>
+      <prompt id='Main4'>
+        <data culture='en-CA'>{,5}» {E,7}Error: {9}&quot;{6}$1{9}&quot; {7}is not in a recognized form.</data>
+        <data culture='fr-CA'>{,5}» {E,7}Erreur: {9}&quot;{6}$1{9}&quot; n&apos;est pas sous une forme reconnue.</data>
+      </prompt>
+      <prompt id='Main5'>
+        <data culture='en-CA'>
+          {,3}»{7,5}Alias creation {C}Failed{7}! -- {A,rn}The supplied alias declaration does not conform to a valid structure.
+          {E,3}Remember{7,rn}:{,5}• {7,rn}The alias itself must be a minimum of 4 characters.
+          {,5}• {7}The definition must be enclosed in double-quotes and {C}CAN NOT {7,rn}contain double-quotes.{,rn}
+        </data>
+        <data culture='fr-CA'>
+          {,3}»{7,5}La création de l&apos;alias {C}a échoué{7}! -- {A,rn}La déclaration d&apos;alias fournie n&apos;est pas conforme à une structure valide.
+          {E,3}N&apos;oubliez pas{7,rn}:{,5}• {7,rn}l&apos;alias lui-même doit comporter au moins 4 caractères.
+          {,5}• {7}La définition doit être placée entre guillemets et {C}NE PEUT PAS{7} contenir de guillemets.{,rn}
+        </data>
+      </prompt>
+      <prompt id='Main6'>
+        <data culture='en-CA'>{,3}» There is no alias called {9}&quot;{e}$1{9,}&quot; {,rn}to remove.</data>
+        <data culture='fr-CA'>{,3}» Il n&apos;y a pas d&apos;alias appelé {9}&quot;{e}$1{9,}&quot; {,rn}à supprimer.</data>
+      </prompt>
+      <prompt id='Main7'>
+        <data culture='en-CA'>{,3}»{a,5}Resizing the {f}Alias {a}table{7}: {7}From {e}$1 {7}to {e}$2 {7}items{}... </data>
+        <data culture='fr-CA'>{,3}»{a,5}Redimensionnement de la table {f}Alias{7}: de {e}$1 {7} à {e}$2 {7} éléments{}...</data>
+      </prompt>
+      <prompt id='Main8'>
+        <data culture='en-CA'>{B,rn}Done.{,3}»{a,5}The table has been successfully reset to a maximum of {e}$1 {,rn}item$2.</data>
+        <data culture='fr-CA'>{B,rn}Fini.{,3}»{a,5}La table a été réinitialisée avec succès à un élément maximum de {e}$1{,rn}.</data>
+      </prompt>
+      <prompt id='Main9'>
+        <data culture='en-CA'>{,3}»{7,5rn}Nothing to do.</data>
+        <data culture='fr-CA'>{,3}»{7,5rn}Rien à faire.</data>
+      </prompt>
+      <prompt id='Main10'>
+        <data culture='en-CA'>{,3}»{C,5}Error{7}: {}The allowable alias range is {e}0 {}to {e}255{,rn}.</data>
+        <data culture='fr-CA'>{,3}»{C,5}Erreur{7}: La plage d&apos;alias autorisée est comprise entre {e}0 {}et {e}255{,rn}.</data>
+      </prompt>
+      <prompt id='Main11'>
+        <data culture='en-CA'>{,3}»{C,5}Error{7}: {}You must be a {3}System{7}.{e}Admin {}to alter the system's {F}Alias{,rn} limit.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main12'>
+        <data culture='en-CA'>{,3}»{C,5}Warning{7}: {a,rn}This operation will remove all of your aliases.</data>
+        <data culture='fr-CA'>{,3}»{C,5}Attention{7}: {a,rn}Cette opération supprimera tous vos alias.</data>
+      </prompt>
+      <prompt id='Main13'>
+        <data culture='en-CA'>{a,14}Are you Sure? {7}({A}Y{7})es or ({C}N{7})o? </data>
+        <data culture='fr-CA'>{a,14}Êtes-vous sûr? {7}({A}O{7})ui ou ({C}N{7})on?  </data>
+      </prompt>
+      <prompt id='Main14'>
+        <data culture='en-CA'>{A}Cleared</data>
+        <data culture='fr-CA'>{A}Vide</data>
+      </prompt>
+      <prompt id='Main15'>
+        <data culture='en-CA'>{C}Aborted</data>
+        <data culture='fr-CA'>{C}Avorté</data>
+      </prompt>
+      <prompt id='Main16'>
+        <data culture='en-CA'>{,3}»{7,5}There are no aliases defined: {F,rn}There's nothing to clear!</data>
+        <data culture='fr-CA'>{,3}»{7,5}Aucun alias n&apos;est défini: {F,rn}Il n&apos;y a rien à effacer!</data>
+      </prompt>
+      <prompt id='Main17'>
+        <data culture='en-CA'>{,3}»{7,5}The following {E}$1 {7,rn}alias$2 are currently defined:</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main18'>
+        <data culture='en-CA'>{B,5}Alias{B,20rn}Content</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main19'>
+        <data culture='en-CA'>"{,3}»{7,5rn}There are no aliases defined for you currently."</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main20'>
+        <data culture='en-CA'>{C,5}Warning{7}: {a,rn}This operation will permanently remove your saved aliases from the Registry,</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main21'>
+        <data culture='en-CA'>{,3}»{7,5rn}The settings have been cleared.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main22'>
+        <data culture='en-CA'>
+          {,3}»{7,5}There are no aliases to save. {,rn}If you want to clear the saved settings use:
+          {,7}»{7,9}NAM {3}/save:{e,rn}reg|clear</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main23'>
+        <data culture='en-CA'>{,3}»{7,5rn}Saving aliases to the registry...</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main24'>
+        <data culture='en-CA'>{7,5rn}Saved.</data>
+        <data culture='fr-CA'></data>
+      </prompt>
+      <prompt id='Main25'>
+        <data culture='en-CA'>{C}Error{}:</data>
+        <data culture='fr-CA'>{C}Erreur{}:</data>
+      </prompt>
+      <prompt id='Main26'>
+        <data culture='en-CA'>{,3}»{E,5}$1 {}alias$2 were found in the Registry, there $4 currently {e}$3 {,rn}defined in the CLI.</data>
+        <data culture='fr-CA'>{,3}»{E,5}$1 {}alias ont été trouvés dans le Registre, il y a actuellement $3 définis dans la CLI.</data>
+      </prompt>
+      <prompt id='Main27'>
+        <data culture='en-CA'>{C,5}Warning{7}: {a,rn}This operation will remove your existing aliases and{a,14rn}replace them with the ones stored in the Registry.</data>
+        <data culture='fr-CA'>{C,5}Attention{7}: {a,rn}Cette opération supprimera vos alias existants et{a,14rn}les remplacera par ceux stockés dans le Registre.</data>
+      </prompt>
+      <prompt id='Main28'>
+        <data culture='en-CA'>Removed</data>
+        <data culture='fr-CA'>Supprimé</data>
+      </prompt>
+      <prompt id='Main29'>
+        <data culture='en-CA'>{,7}»{e,9}$1 {,rn}existing alias$2 were cleared.</data>
+        <data culture='fr-CA'>{,7}»{e,9}$1 {,rn}alias existants ont été effacés.</data>
+      </prompt>
+      <prompt id='Main30'>
+        <data culture='en-CA'>Adding</data>
+        <data culture='fr-CA'>Ajouter</data>
+      </prompt>
+      <prompt id='Main31'>
+        <data culture='en-CA'>{,5}»{7,7rn}The saved settings have been restored.</data>
+        <data culture='fr-CA'>{,5}»{7,7rn}Les paramètres enregistrés ont été restaurés.</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdIf' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Performs evaluations simple expressions and executes specified instructions accordingly.</data>
+        <data culture='fr-CA'>Effectue des évaluations d&apos;expressions simples et exécute les instructions spécifiées en conséquence.</data>
+      </prompt>
+      <prompt id='MySyntax'>
+        <data culture='en-CA'>==
+			    {9}({F}${e}&amp;lbrace;{B}EnvVarName{e}&amp;rbrace;{9}|{6}&quot;{e}&amp;lbrace;{b}value{e}&amp;rbrace;{9}{6}&quot;{9})
+			    {9}({F}=={9}|{F}!={9}|{F}&lt;={9}|{F}&lt;{9}|{F}&gt;{9}|{F}&gt;={9})
+			    {9}({F}${e}&amp;lbrace;{B}EnvVarName{e}&amp;rbrace;{9}|{6}&quot;{e}&amp;lbrace;{b}value{e}&amp;rbrace;{9}{6}&quot;{9})
+			    {7}THEN {9}({e}&amp;lbrace;{b}Command{e}&amp;rbrace;{9}|{7}SET {e}&amp;lbrace;{b}variable{9}={6}&quot;{e}&amp;lbrace;
+          {b}value{e}&amp;rbrace;{6}&quot;{9})
+        </data>
+        <data culture='fr-CA'>==
+          {9}({F}${e}&amp;lbrace;{B}EnvVarName{e}&amp;rbrace;{9}|{6}&quot;{e}&amp;lbrace;{b}valeur{e}&amp;rbrace;{9}{6}&quot;{9})
+          {9}({F}=={9}|{F}!={9}|{F}&lt;={9}|{F}&lt;{9}|{F}&gt;{9}|{F}&gt;={9})
+          {9}({F}${e}&amp;lbrace;{B}EnvVarName{e}&amp;rbrace;{9}|{6}&quot;{e}&amp;lbrace;{b}value{e}&amp;rbrace;{9}{6}&quot;{9})
+          {7}THEN {9}({e}&amp;lbrace;{b}Commande{e}&amp;rbrace;{9}|{7}SET {e}&amp;lbrace;{b}variable{9}={6}&quot;{e}&amp;lbrace;
+          {b}value{e}&amp;rbrace;{6}&quot;{9})
+        </data>
+      </prompt>
+      <prompt id='MyHelp'>
+        <data culture='en-CA'>
+			    {7,5}•{,7}This command does {e}NOT{,rn} use switches!
+			    {7,5}• {f}${e}&amp;lbrace;{b}EnvVarName{e}&amp;rbrace; {}is the name of an environment variable whose {e}value{} will be compared (typically {7}ERRORLEVEL{,rn}).
+			    {7,7}» {}A {B}${}, as the first character, marks it as an environment variable reference and {e}not{,rn} a value.
+			    {7,7}» {}If the referenced environment variable doesn&apos;t exist, a {e}&amp;lbrace;{b}null{e}&amp;rbrace;{} value {9}({6}&quot;&quot;{9}){,rn} will be substituted.
+			    {7,5}• {6}&quot;{e}&amp;lbrace;{b}value{e}&amp;rbrace;{6}&quot; {,rn}represents a literal value to compare;
+			    {7,7}» {}As shown, quotes {9}({6}&amp;quot;{9}){,rn} are usually used to contain/identify literal values, but they aren&apos;t strictly
+			    {,9}required {e}unless {}the literal contains non-alphanumeric-characters, spaces or the word {9}&quot;{7}THEN{9}&quot;{,rn}.
+			    {7,7}» {}In any event, literals {e}can not contain {}the quote character {9}({6}&amp;quot;{9}){,rn}.
+          {7,7}» {}Any {b}$ {}appearing in a value that&apos;s enclosed by quotes will be treated {e}literally{,rn}!
+          {7,7}» {}Brackets are always treated as data and are not processed operationally.
+          {7,5}•{,rn} Numeric values will be compared numerically, everything else will be compared as strings.
+          {7,7}»{} If a numeric value and a non-numeric value are compared, {e}both {}will be treated as {e}strings{,rn}.
+          {7,7}»{} The cmdlet determines numeracy {e}on it&apos;s own{,rn}. There&apos;s no mechanism to specifically force one
+          {,9rn}comparison type or the other.
+          {7,5}• {}The shown operators are the {e}only {}ones supported. {F,rn}DON&apos;T USE BRACKETS!
+          {7,5}• {e}&amp;lbrace;{b}Command{e}&amp;rbrace; {,rn}represents the full text instruction that will be sent to the CLI if the comparison passes.
+			    {7,7}»{} Literally {e}everything{} after the {7}THEN{} directive is passed to the CLI {e}verbatim{,rn}. As such,{,9rn}you only 
+			    have to use quotes or other markers when they&apos;re part of the instruction itself.{,rn}
+			    {7,5}• {F}Be aware {}that a {e}&amp;lbrace;{b}Command{e}&amp;rbrace;{} generated by {7}IF {}is {b}queued{}, and will {e}NOT {,rn}be executed immediately!
+			    {,7}This means that, when the {7}IF {}command is contained within a script, any command it issues will {e,rn}not
+			    {,7rn}be run until after the entire script has finished running.
+			    {7,7}» {,rn}Queued commands will then be executed in the order that they were sent.
+			    {7,7}» SET{} instructions, on the other hand, {e}are{} processed immediately by {7}IF {,rn}itself.
+        </data>
+        <data culture='fr-CA'>
+			    {7,5}•{,7}Cette commande {e}n&apos;utilise PAS{,rn} de commutateurs!
+          {7,5}• {f}${e}&amp;lbrace;{b}EnvVarName{e}&amp;rbrace; {}est le nom d&apos;une variable d&apos;environnement dont {e}la valeur{} sera comparée (typiquement ERRORLEVEL{,rn}).
+			    {7,7}» {}A {B}${}, comme premier caractère, le marque comme une référence de variable d&apos;environnement et {e}non comme une valeur{,rn}.
+			    {7,7}» {}Si la variable d&apos;environnement référencée n&apos;existe pas, une valeur {e}&amp;lbrace;{b}null{e}&amp;rbrace; {9}({6}&quot;&quot;{9}){,rn} sera remplacée.
+          {7,5}• {6}&quot;{e}&amp;lbrace;{b}valeur{e}&amp;rbrace;{6}&quot; {,rn}représente une valeur littérale à comparer;
+          {7,7}» {}Comme indiqué, les guillemets {9}({6}&amp;quot;{9}){,rn} sont généralement utilisés pour contenir des valeurs littérales,
+          {,9}mais ils ne sont strictement obligatoires {e}que si {,rn}le littéral contient des caractères non alphanumériques,
+          {,9}des espaces ou le mot {9}&quot;{7}THEN{9}&quot;{,rn}.
+          {7,7}» {}Dans tous les cas, les littéraux {e}ne peuvent pas {}contenir le caractère guillemet {9}({6}&amp;quot;{9}){,rn}.
+          {7,7}» {}Tout {b}$ {}apparaissant dans une valeur entre guillemets sera traité {e}littéralement{,rn}!
+          {7,7}» {,rn}Les parenthèses sont toujours traitées comme des données et ne sont pas traitées de manière opérationnelle.
+          {7,5}• {,rn}Les valeurs numériques seront comparées numériquement, tout le reste sera comparé sous forme de chaînes.
+          {7,7}» {}Si une valeur numérique et une valeur non numérique sont comparées, {e}les deux seront {}traitées comme des {e}chaînes{,rn}.
+          {7,7}» {}L&apos;cmdlet détermine {e}elle-même {,rn}la numératie. Il n&apos;y a pas de mécanisme pour forcer spécifiquement un type
+          {,9rn}de comparaison ou l&apos;autre.
+          {7,5}• {}Les opérateurs affichés sont les seuls pris en charge. {F,rn}N&apos;UTILISEZ PAS DE PARENTHÈSES!!
+          {7,5}• {e}&amp;lbrace;{b}Commande{e}&amp;rbrace; {,rn}représente l&apos;instruction de texte intégral qui sera envoyée à l&apos;interface de ligne de commande
+          {,9rn}si la comparaison réussit.
+          {7,7}» {}Littéralement, tout ce qui suit la directive {7}THEN{} est passé textuellement à l&apos;interface de ligne de commande{,rn}.
+          {,9rn}En tant que tel, vous ne devez utiliser des guillemets ou d&apos;autres marqueurs que lorsqu&apos;ils font partie de
+          {,9rn}l&apos;instruction elle-même.{,rn}
+          {7,5}• {F}Sachez qu&apos;une {e}&amp;lbrace;{b}Commande{e}&amp;rbrace;{} générée par {7}IF {b}mise en file{} d&apos;attente et {e}ne sera pas {,rn}exécutée immédiatement!
+          {,7}Cela signifie que, lorsque la commande {7}IF {}est contenue dans un script, toute commande émise {e,rn}ne sera
+          {,7rn}exécutée qu&apos;après la fin de l&apos;exécution du script.
+          {7,7}» {,rn}Les commandes mises en file d&apos;attente seront alors exécutées dans l&apos;ordre dans lequel elles ont été envoyées.
+          {7,7}» {}Les instructions {7}SET{}, par contre, sont traitées immédiatement par {7}IF{,rn} lui-même.
+        </data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{,3}»{7,5rn}You must specify a condition for this command.</data>
+        <data culture='fr-CA'>{,3}»{7,5rn}Vous devez spécifier une condition dans cette commande.</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>Done!</data>
+        <data culture='fr-CA'>Fini!</data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{c,9}Error: {7,rn}Invalid Syntax, nothing was done!</data>
+        <data culture='fr-CA'>{c,9}Erreur: {7,rn}Syntaxe Invalide, rien n&apos;a été fait!</data>
+      </prompt>
+      <prompt id='Main3'>
+        <data culture='en-CA'>Tested condition is {A}TRUE{7}; Queueing</data>
+        <data culture='fr-CA'>La condition testée est {A}VRAIE{7}; Mise en file d&apos;attente</data>
+      </prompt>
+      <prompt id='Main4'>
+        <data culture='en-CA'>Tested condition is {4}FALSE</data>
+        <data culture='fr-CA'>La condition testée est {4}FAUX</data>
+      </prompt>
+      <prompt id='Main5'>
+        <data culture='en-CA'>{,3}» {7,rn}You must provide a validly formatted payload for this command to function.</data>
+        <data culture='fr-CA'>{,3}» {7,rn}Vous devez fournir une charge utile formatée valablement pour que cette commande fonctionne.</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdLanguage' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Manages the CLI&apos;s culture and language settings.</data>
+        <data culture='fr-CA'>Gère la culture et les paramètres linguistiques de l&apos;interface de ligne de commande.</data>
+      </prompt>
+      <prompt id='Main1'>
+        <data culture='en-CA'>Supported Languages</data>
+        <data culture='fr-CA'>Langues Prises en Charge</data>
+      </prompt>
+      <prompt id='Main0'>
+        <data culture='en-CA'>{,3}»{7,5}Current Culture</data>
+        <data culture='fr-CA'>{,3}»{7,5}Culture Actuelle</data>
+      </prompt>
+      <prompt id='Main4'>
+        <data culture='en-CA'>{,3}»{7,5}{7,3}»{,5}The system language has been changed to</data>
+        <data culture='fr-CA'>{,3}»{7,5}La langue du système a été modifiée en</data>
+      </prompt>
+      <prompt id='Main5'>
+        <data culture='en-CA'>{f,3}»{C,5}Error{7}: {e}The requested language ($1) is not supported!{,rn}</data>
+        <data culture='fr-CA'>{f,3}»{C,5}Erreur{7}: La langue demandée ($1) n&apos;est pas prise en charge!{,rn}</data>
+      </prompt>
+      <prompt id='Main6'>
+        <data culture='en-CA'>{f,3}»{C,5}Error{7}: {e}The language specification provided is unrecognized ($1)!{,rn}</data>
+        <data culture='fr-CA'>{f,3}»{C,5}Erreur{7}: {e}La spécification de langue fournie n&apos;est pas reconnue ($1)!{,rn}</data>
+      </prompt>
+      <prompt id='Main7'>
+        <data culture='en-CA'>{,3}»{7,5}The compiled resource file, {9}&quot;{B}$1{9}&quot;{7,rn} has been created.</data>
+        <data culture='fr-CA'>{,3}»{7,5}Le fichier de ressources compilé, {9}&quot;{B}$1{9}&quot;{7,rn} a été créé.</data>
+      </prompt>
+      <prompt id='Main2'>
+        <data culture='en-CA'>{7,3}»{C,5}Error{7}: {e}The specified file {9}&quot;{0e}$1{9}&quot; {e,rn}could not be found.</data>
+        <data culture='fr-CA'>{7,3}»{C,5}Erreur{7}: {e}Le fichier spécifié {9}&quot;{0e}$1{9}&quot; {e,rn}est introuvable.</data>
+      </prompt>
+      <prompt id='Main3'>
+        <data culture='en-CA'>{,3}»{7,5}The requested XML resources file, {9}&quot;{6}$1{9}&quot;{7,rn}, has been loaded.</data>
+        <data culture='fr-CA'>{,3}»{7,5}Le fichier de ressources XML demandé, {9}&quot;{6}$1{9}&quot;{7,rn}, a été chargé.</data>
+      </prompt>
+    </method>
+    <method name='ConsoleFunctions.CmdletExit' default='en-CA'>
+      <prompt id='MyPurpose'>
+        <data culture='en-CA'>Closes all open files, connections, forms and operations then ends CLI operation.</data>
+        <data culture='fr-CA'>Ferme tous les fichiers, connexions, formulaires et opérations ouverts, puis met fin à l&apos;opération CLI.</data>
+      </prompt>
+    </method>
+  </resource>
+</project>

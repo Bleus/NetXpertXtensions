@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33103.201
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpellCheckTool", "SpellCheckTool.csproj", "{AED91D10-301A-427D-9DE6-06831233AD0F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetXpertExtensions", "..\..\NetXpertXtensions\NetXpertExtensions\NetXpertExtensions.csproj", "{B5A03FA6-3325-4BE9-870A-B5839D90F641}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetXpertCodeLibrary", "..\..\..\NetXpert\NetXpertCodeLibrary\NetXpertCodeLibrary\NetXpertCodeLibrary.csproj", "{42F9BA08-BF8E-4953-8086-6668EDAEDD18}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AED91D10-301A-427D-9DE6-06831233AD0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AED91D10-301A-427D-9DE6-06831233AD0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AED91D10-301A-427D-9DE6-06831233AD0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AED91D10-301A-427D-9DE6-06831233AD0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A03FA6-3325-4BE9-870A-B5839D90F641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A03FA6-3325-4BE9-870A-B5839D90F641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A03FA6-3325-4BE9-870A-B5839D90F641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A03FA6-3325-4BE9-870A-B5839D90F641}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42F9BA08-BF8E-4953-8086-6668EDAEDD18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42F9BA08-BF8E-4953-8086-6668EDAEDD18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42F9BA08-BF8E-4953-8086-6668EDAEDD18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42F9BA08-BF8E-4953-8086-6668EDAEDD18}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1C6EAB2B-869F-457F-98AC-73DA4E43B58D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33312.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetXpertCodeLibrary", "NetXpertCodeLibrary\NetXpertCodeLibrary.csproj", "{675B7D35-34B8-4A59-AF1B-9DC4F3133913}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3DADCF7B-312A-4255-B638-6753DF59F1AE} = {3DADCF7B-312A-4255-B638-6753DF59F1AE}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetX-LMP", "..\..\Languages\NetX-LMP\NetX-LMP.csproj", "{3DADCF7B-312A-4255-B638-6753DF59F1AE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{675B7D35-34B8-4A59-AF1B-9DC4F3133913}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675B7D35-34B8-4A59-AF1B-9DC4F3133913}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675B7D35-34B8-4A59-AF1B-9DC4F3133913}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675B7D35-34B8-4A59-AF1B-9DC4F3133913}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DADCF7B-312A-4255-B638-6753DF59F1AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DADCF7B-312A-4255-B638-6753DF59F1AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DADCF7B-312A-4255-B638-6753DF59F1AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DADCF7B-312A-4255-B638-6753DF59F1AE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10376F0E-2244-44AD-A944-B373AC6BE6CF}
+	EndGlobalSection
+EndGlobal
